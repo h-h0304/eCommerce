@@ -1,0 +1,64 @@
+### 상품추가
+POST http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aWl1VDZlUy84OFFXY1ZpbDJaSjdRPT0iLCJqdGkiOiJkQWN2QTR0bnRHTzF4UHIxUVdybyt3PT0iLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTcwODc3NDg5OCwiZXhwIjoxNzA4ODYxMjk4fQ.-gBvpBCCccPEA0uV451636IXigshDIh0811FG8ddd0c
+
+{
+  "description": "테스트용 상품 설명 1",
+  "items": [
+    {
+      "count": 1,
+      "name": "270",
+      "price": 10000
+    }
+  ],
+  "name": "아디다스 테스트1"
+}
+
+
+### 상품 아이템 추가
+POST http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJYeU1xekRDbWd2WUdtdUg3S1d2UFdzQlFLWkpFVU1RRXFYSmhYQnQvWGZvPSIsImp0aSI6IjEzUlpBdFpPSzZYTkI3TzluaTFNekE9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNzA4NzU3OTMyLCJleHAiOjE3MDg4NDQzMzJ9.9netJZ5aWyiP2qJ902zNHwy9mpSqpOHoPwnGTsLQ59o
+
+{
+  "productId": 1,
+  "count": 1,
+  "name": "280",
+  "price": 10000
+}
+
+
+### 상품 수정
+PUT http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJYeU1xekRDbWd2WUdtdUg3S1d2UFdzQlFLWkpFVU1RRXFYSmhYQnQvWGZvPSIsImp0aSI6IjEzUlpBdFpPSzZYTkI3TzluaTFNekE9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNzA4Njk0MjYxLCJleHAiOjE3MDg3ODA2NjF9.QRVdH-O0EFkeohGNDYojEgGCcXGVGFnBgo-CUbrvbgs
+
+{
+  "description": "상품설명",
+  "items": [
+    {
+      "id": 1,
+      "count": 1,
+      "name": "3000",
+      "price": 10000
+    }
+  ],
+  "name": "나이키 에어포스"
+}
+
+
+### 상품 아이템 수정
+PUT http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJYeU1xekRDbWd2WUdtdUg3S1d2UFdzQlFLWkpFVU1RRXFYSmhYQnQvWGZvPSIsImp0aSI6IjEzUlpBdFpPSzZYTkI3TzluaTFNekE9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNzA4Njk0MjYxLCJleHAiOjE3MDg3ODA2NjF9.QRVdH-O0EFkeohGNDYojEgGCcXGVGFnBgo-CUbrvbgs
+
+
+{
+  "productId": 1,
+  "count": 1,
+  "name": "280",
+  "price": 10000
+}
+
+

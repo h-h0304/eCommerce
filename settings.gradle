@@ -1,0 +1,3 @@
+rootProject.name = 'eCommerce'
+include ':user-api'
+include ':backend-domain'

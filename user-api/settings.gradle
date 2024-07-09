@@ -1,0 +1,4 @@
+rootProject.name = 'user-api'
+
+include 'backend-domain'
+include 'order-api'
